@@ -56,24 +56,24 @@ const { isLoading, state } = useAsyncState<QuestionnaireQuestionsType>(
     id: '',
     title: '',
     questions: [
-      {
-        id: '1',
-        question: 'a',
-        answers: [
-          { id: '1', letter: 'A', answer: 'AAA' },
-          { id: '2', letter: 'B', answer: 'BBB' },
-          { id: '3', letter: 'C', answer: 'CCC' },
-        ],
-      },
-      {
-        id: '2',
-        question: 'a',
-        answers: [
-          { id: '1', letter: 'A', answer: 'AAA' },
-          { id: '2', letter: 'B', answer: 'BBB' },
-          { id: '3', letter: 'C', answer: 'CCC' },
-        ],
-      },
+      // {
+      //   id: '1',
+      //   question: 'a',
+      //   answers: [
+      //     { id: '1', letter: 'A', answer: 'AAA' },
+      //     { id: '2', letter: 'B', answer: 'BBB' },
+      //     { id: '3', letter: 'C', answer: 'CCC' },
+      //   ],
+      // },
+      // {
+      //   id: '2',
+      //   question: 'a',
+      //   answers: [
+      //     { id: '1', letter: 'A', answer: 'AAA' },
+      //     { id: '2', letter: 'B', answer: 'BBB' },
+      //     { id: '3', letter: 'C', answer: 'CCC' },
+      //   ],
+      // },
     ],
   }
 );
