@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex">
+  <q-page padding>
     <q-card bordered class="my-card">
       <q-card-section>
         <div class="text-h6">Questinario {{ questionnaireId }}</div>
