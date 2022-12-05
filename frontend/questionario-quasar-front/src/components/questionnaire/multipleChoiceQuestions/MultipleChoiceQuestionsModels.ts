@@ -1,11 +1,11 @@
 import { z } from 'zod';
-const MultipleChoiceAnswer = z.object({
+export const MultipleChoiceAnswer = z.object({
   id: z.string(),
   letter: z.string(),
   answer: z.string(),
 });
 
-const MultipleChoiceQuestion = z.object({
+export const MultipleChoiceQuestion = z.object({
   id: z.string(),
   question: z.string(),
   answers: z.array(MultipleChoiceAnswer),

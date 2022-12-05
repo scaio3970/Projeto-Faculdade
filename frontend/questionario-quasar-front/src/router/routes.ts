@@ -3,11 +3,8 @@ import u from './u';
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      ...u,
-      { path: '', component: () => import('pages/IndexPage.vue') },
-    ],
+    component: () => import('layouts/route/RouteBlank.vue'),
+    children: [...u, { path: '', redirect: '/u/home' }],
   },
 
   // Always leave this as last one,
