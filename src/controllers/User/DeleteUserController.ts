@@ -6,7 +6,7 @@ export class DeleteUserController{
     async handle(request:Request,response:Response){
         const decoder =new JwtVerifyService()
 
-        const {id} = request.body;
+        const {id} = request.params;
 
         const service =new DeleteUserService();
 

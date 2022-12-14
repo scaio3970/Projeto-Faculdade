@@ -4,9 +4,9 @@ import { Cargo } from "../models/Cargo";
 
 export class GetAllRoleService{
     async execute(){
-        const repo = getRepository(Cargo)
+        const repo = getRepository(Cargo);
 
-        const roles = await repo.find()
+        const roles = await repo.find();
 
         return roles;
     }

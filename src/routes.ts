@@ -8,12 +8,14 @@ import { UpdateUserController } from "./controllers/User/UpdateUserController";
 import { JwtVerifyService } from "./services/JwtVerifyService";
 import {decode} from 'jsonwebtoken'
 import { CreateRoleController } from "./controllers/CreateRoleController";
+import { GetAllRoleController } from "./controllers/GetAllRoleController";
 const routes = Router()
 
 const path = require('path')
 
 //GET
 routes.get("/Usuarios",new GetAllUsersController().handle);
+routes.get("/Todoscargos", new GetAllRoleController().handle)
 
 //POST
 routes.post("/cadastro",new CreateUserController().handle);
@@ -23,7 +25,7 @@ routes.post("/cargo", new CreateRoleController().handle)
 
 
 //DELETE
-routes.delete("/DeletarUsuario/", new DeleteUserController().handle)
+routes.delete("/DeletarUsuario/:id", new DeleteUserController().handle)
 
 //UPDATE
 routes.put("/usuario/:id", new UpdateUserController().handle)
@@ -32,7 +34,7 @@ routes.put("/usuario/:id", new UpdateUserController().handle)
 
 //Front-End
 
-routes.get("/redirecionar", (req, res) => {
+routes.get("/avaliacao", (req, res) => {
 
     if(req.cookies.token === undefined){
         res.redirect('/login')
