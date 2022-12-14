@@ -1,5 +1,12 @@
 function capturarRespostas(){
-    var pacote = document.querySelectorAll('[name=question-1]:checked');
+    for(let i = 0 ;i<= 5; i++){
+        if(document.getElementById(`pergunta-1-${i}`).checked = true){
+            let teste = document.getElementById(`pergunta-1-${i}`).value
+            console.log(teste)
+        }
+        
+        console.log(pacote)
+    }
 
-    console.log("pacote")
+    
 }

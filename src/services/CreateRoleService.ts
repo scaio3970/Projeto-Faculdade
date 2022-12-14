@@ -3,7 +3,7 @@ import { Cargo } from "../models/Cargo";
 
 
 export class CreateRoleService{
-    async excute(nome){
+    async execute(nome){
         const repo = getRepository(Cargo);
 
         const cargo = repo.create({nome})

@@ -7,6 +7,7 @@ import { SessionController } from "./controllers/Session/SessionController";
 import { UpdateUserController } from "./controllers/User/UpdateUserController";
 import { JwtVerifyService } from "./services/JwtVerifyService";
 import {decode} from 'jsonwebtoken'
+import { CreateRoleController } from "./controllers/CreateRoleController";
 const routes = Router()
 
 const path = require('path')
@@ -18,6 +19,7 @@ routes.get("/Usuarios",new GetAllUsersController().handle);
 routes.post("/cadastro",new CreateUserController().handle);
 routes.post("/permissao",new PermissionController().handle);
 routes.post("/sessions", new SessionController().handle)
+routes.post("/cargo", new CreateRoleController().handle)
 
 
 //DELETE
@@ -45,6 +47,25 @@ routes.get("/login", (rep,res) => {
     
     res.render('index')
 
+})
+
+routes.get("/altdados", (rep,res) => {
+    res.render('front-end/altdados')
+})
+
+routes.get("/func", (rep,res) => {
+    res.render('front-end/func')
+})
+
+routes.get("/relatorio", (rep,res) => {
+    res.render('front-end/relatorio')
+})
+
+routes.get("/sup", (rep,res) => {
+    res.render('front-end/sup')
+})
+routes.get("/altdados", (rep,res) => {
+    res.render('front-end/tel')
 })
 
 routes.get("/logout", (req, res) => {

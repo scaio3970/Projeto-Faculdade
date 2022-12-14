@@ -12,7 +12,7 @@ export class Usuario{
 
     @Column()
     senha:string;
-
+        
     constructor(){
         if(!this.id){
             this.id =uuid();
