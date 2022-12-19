@@ -8,7 +8,7 @@ export class CreateRoleService{
 
         const cargo = repo.create({nome})
 
-        if(await repo.findOne(nome)){
+        if(await repo.findOne({nome})){
             return new Error("Cargo já existe")
         }
 

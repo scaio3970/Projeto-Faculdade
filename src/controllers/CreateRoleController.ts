@@ -7,7 +7,7 @@ export class CreateRoleController{
 
         const service = new CreateRoleService()
 
-        const result = service.execute(cargo)
+        const result = await service.execute(cargo)
 
         if( result instanceof Error){
             return response.status(400).json(result.message)

@@ -26,6 +26,9 @@ input{
     border-radius: 5px;
     margin:8px;
 }
+input::placeholder{
+    color: black;
+}
 button{
     background-color: dodgerblue;
     border: none;

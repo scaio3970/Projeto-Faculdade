@@ -1,6 +1,5 @@
-import {Entity,Column,PrimaryColumn,CreateDateColumn, ManyToOne} from 'typeorm'
+import {Entity,Column,PrimaryColumn} from 'typeorm'
 import {v4 as uuid } from "uuid"
-import { Usuario } from './Usuario';
 
 @Entity('cargo')
 export class Cargo{

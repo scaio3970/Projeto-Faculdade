@@ -1,5 +1,6 @@
-import {Entity,Column,PrimaryColumn,CreateDateColumn, ManyToOne} from 'typeorm'
+import {Entity,Column,PrimaryColumn,CreateDateColumn, ManyToOne, JoinTable} from 'typeorm'
 import {v4 as uuid } from "uuid"
+import { Cargo } from './Cargo';
 import { Usuario } from './Usuario';
 
 @Entity('funcionario')
@@ -15,8 +16,9 @@ export class Funciorario{
     email:string;
 
     @Column()
-    id_cargo:string;
+    id_cargo:string
 
+    
     constructor(){
         if(!this.id){
             this.id =uuid();

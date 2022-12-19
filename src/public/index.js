@@ -19,6 +19,6 @@ async function login(){
     .then(response =>{
         window.location.href ="/redirecionar"
     })
-    .catch(error =>console.log(error))
+    .catch(error =>console.log(error.response.data))
 
 }

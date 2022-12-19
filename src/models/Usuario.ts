@@ -1,5 +1,6 @@
-import {Entity,Column,PrimaryColumn} from 'typeorm'
+import {Entity,Column,PrimaryColumn, JoinColumn, JoinTable} from 'typeorm'
 import {v4 as uuid } from "uuid"
+import { Funciorario } from './Funcionario';
 
 @Entity('usuario')
 export class Usuario{
@@ -12,6 +13,12 @@ export class Usuario{
 
     @Column()
     senha:string;
+
+    @Column()
+    id_funcionario:String
+
+    @Column()
+    admin:boolean
         
     constructor(){
         if(!this.id){

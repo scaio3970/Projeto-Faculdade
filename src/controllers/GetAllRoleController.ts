@@ -5,7 +5,9 @@ import { GetAllRoleService } from "../services/GetAllRoleService";
 export class GetAllRoleController{
     async handle(request:Request, response:Response) {
         const service = new GetAllRoleService()
-        const result = service.execute()
+        const result = await service.execute()
+
+        console.log(result)
 
         return response.json(result)
     }

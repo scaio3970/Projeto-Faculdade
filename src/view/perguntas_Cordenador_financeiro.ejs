@@ -6,183 +6,9 @@
     <title>Security Survey</title>
     <meta name="description" content="Survey">
     <meta name="Lucas" content="Lucas">
-     <script>
-function capturarRespostas(question,value){
 
-var object = new Object
+    <link rel="stylesheet" href="/perguntas2.0.css">
 
-object[`pergunta-${question}`] = value
-
-console.log(object)
-
-
-}
-     </script>
-<style>
-    @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.column {
-    margin-bottom: 1.5rem;
-    width: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-
-@media (min-width: 640px) {
-    .container {
-        width: 90%;
-        padding: 0;
-    }
-    .column {
-        margin-left: 4%;
-    }
-    .column:first-child {
-        margin-left: 0;
-    }
-    .full-width.column {
-        width: 100%;
-        margin-left: 0;
-    }
-    .one-half.column {
-        width: 48%;
-    }
-    .one-third.column {
-        width: 30.6666666667%;
-    }
-    .two-thirds.column {
-        width: 65.3333333333%;
-    }
-    .one-quarter.column {
-        width: 22%;
-    }
-    .two-quarter.column {
-        width: 48%;
-    }
-    .three-quarter.column {
-        width: 74%;
-    }
-    .one-half.column {
-        width: 48%;
-    }
-}
-
-.container:after,
-.row:after,
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: #444444;
-    background-color: #f1f1f1;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Barclaycard Co Lt', sans-serif;
-    color: #018fd0;
-    margin-top: 0;
-}
-
-h1 {
-    font-size: 54px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-h3 {
-    color: #5224a0;
-    font-size: 26px;
-}
-
-.center {
-    text-align: center;
-}
-
-.questions_box {
-    background-color: #ffffff;
-    padding: 60px;
-    text-align: left;
-    max-width: 960px;
-}
-
-.button {
-    font-family: 'Barclaycard Co Lt', Tahoma, sans-serif;
-    margin: 10px 0 0 0;
-    float: right;
-    cursor: pointer;
-    font-size: 1em;
-    border: none;
-    padding: 10px 15px;
-    line-height: 18px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    vertical-align: baseline;
-    background: #075da8;
-    color: white;
-    text-decoration: none !important;
-    display: inline-block;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-transition: background-color 200ms ease-in-out;
-    -moz-transition: background-color 200ms ease-in-out;
-    -o-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
-}
-
-.button:hover {
-    background-color: #059fdb !important;
-    color: white;
-}
-
-#question-2,
-#question-3,
-#question-4,
-#question-5,
-#question-6,
-#question-7,
-#question-8,
-#question-9,
-#question-10,
-#question-11,
-#question-12,
-#question-13,
-#question-14,
-#question-15,
-#question-16,
-#question-17,
-#question-18,
-#question-19,
-#question-20,
-#question-21 {
-    display: none;
-}
-
-#progress_bar {
-    background-color: #018fd0;
-    width: 5%;
-    height: 10px;
-    transition: all 100ms ease-in-out;
-}
-</style>
 </head>
 
 <body>
@@ -195,7 +21,7 @@ h3 {
                 <form class="questions_box">
 
                     <div id="question-1">
-                        <h2>Questão 1</h2>
+                        <h2>Etapa-1</h2>
                         <h3>1 - QUAL SUA FORMAÇÃO?</h3>
                         <input id="question-1" type="radio" name="favelang" value=1 onclick="capturarRespostas(1,1)"> FUNDAMENTAL<br>
                         <input id="question-1" type="radio" name="favelang" value=2 onclick="capturarRespostas(1,2)"> MÉDIO<br>
@@ -207,7 +33,7 @@ h3 {
                     </div>
 
                     <div id="question-2">
-                        <h2>Questão 2</h2>
+                        <h2>Etapa-1</h2>
                         <h3>2 - QUAL É SUA ÁREA DE ATUAÇÃO?</h3>
                         <input id="question-2-answer-a" type="radio" name="favelang" value="1"onclick="capturarRespostas(2,1)"> NENHUMA<br>
                         <input id="question-2-answer-b" type="radio" name="favelang" value="2"onclick="capturarRespostas(2,2)"> OUTROS<br>
@@ -219,7 +45,7 @@ h3 {
                     </div>
 
                     <div id="question-3">
-                        <h2>Questão 3</h2>
+                        <h2>Etapa-1</h2>
                         <h3>3 - HÁ QUANTO TEMPO VOCÊ É FORMADO?</h3>
                         <input id="question-3-answer-a" type="radio" name="favelang" value="1" onclick="capturarRespostas(3,1)"> + 10 ANOS<br>
                         <input id="question-3-answer-b" type="radio" name="favelang" value="2" onclick="capturarRespostas(3,1)"> 8 ANOS<br>
@@ -232,7 +58,7 @@ h3 {
                     </div>
 
                     <div id="question-4">
-                        <h2>Questão 4</h2>
+                        <h2>Etapa-1</h2>
                         <h3>4 - QUANTAS ESPECIALIZAÇÕES VOCÊ POSSUI?</h3>
                         <input id="question-4-answer-a" type="radio" name="favelang" value="1" onclick="capturarRespostas(4,1)"> NENHUMA <br>
                         <input id="question-4-answer-b" type="radio" name="favelang" value="2" onclick="capturarRespostas(4,2)"> UMA<br>
@@ -245,7 +71,7 @@ h3 {
                     </div>
 
                     <div id="question-5">
-                        <h2>Questão 5</h2>
+                        <h2>Etapa-2</h2>
                         <h3>1 - QUAL DESSES VOCÊ ACREDITA SER O PILAR PARA UM BOM RELACIONAMENTO INTERPESSOAL?</h3>
                         <input id="question-5-answer-a" type="radio" name="favelang" value="1" onclick="capturarRespostas(5,1)"> INDIVIDUALISMO<br>
                         <input id="question-5-answer-b" type="radio" name="favelang" value="2" onclick="capturarRespostas(5,2)"> EMPATIA<br>
@@ -257,7 +83,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-6">
-                        <h2>Questão 6</h2>
+                        <h2>Etapa-2</h2>
                         <h3>2 - QUAL DESSES PERFIS VOCÊ ACHA MAIS FÁCIL DE LIDAR?</h3>
                         <input id="question-6-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(6,1)"> MANIPULADOR<br>
                         <input id="question-6-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(6,2)"> PROCRASTINADOR<br>
@@ -269,7 +95,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-7">
-                        <h2>Questão 7</h2>
+                        <h2>Etapa-2</h2>
                         <h3>3 - SE VOCÊ PUDESSE ESCOLHER OS MEMBROS DA SUA EQUIPE, QUAIS COMPETÊNCIAIS ELES DEVERIAM TER?</h3>
                         <input id="question-7-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(7,5)"> AUTOCONFIANÇA<br>
                         <input id="question-7-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(7,5)"> ORGANIZAÇÃO<br>
@@ -280,7 +106,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-8">
-                        <h2>Questão 8</h2>
+                        <h2>Etapa-2</h2>
                         <h3>4 - QUAL DESSES FATORES VOCÊ ACREDITA QUE INFLUENCIAM NO RELACIONAMENTO INTERPESSOAL? </h3>
                         <input id="question-8-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(8,5)"> AMIZADE<br>
                         <input id="question-8-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(8,5)"> COOPERAÇÃO<br>
@@ -291,7 +117,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-9">
-                        <h2>Questão 9</h2>
+                        <h2>Etapa-3</h2>
                         <h3>1 - QUAL DESSES VOCÊ ACREDITA SER O PILAR PARA UM BOM RELACIONAMENTO INTERPESSOAL?</h3>
                         <input id="question-9-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(9,5)">INDIVIDUALISMO<br>
                         <input id="question-9-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(9,5)">EMPATIA<br>
@@ -302,7 +128,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-10">
-                        <h2>Questão 10</h2>
+                        <h2>Etapa-3</h2>
                         <h3>2 - QUAL DESSES PERFIS VOCÊ ACHA MAIS FÁCIL DE LIDAR?</h3>
                         <input id="question-10-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(10,1)">MANIPULADOR<br>
                         <input id="question-10-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(10,2)"> PROCRASTINADOR<br>
@@ -313,7 +139,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-11">
-                        <h2>Questão 11</h2>
+                        <h2>Etapa-3</h2>
                         <h3>3 - SE VOCÊ PUDESSE ESCOLHER OS MEMBROS DA SUA EQUIPE, QUAIS COMPETÊNCIAIS ELES DEVERIAM TER?</h3>
                         <input id="question-11-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(11,1)"> AUTOCONFIANÇA<br>
                         <input id="question-11-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(11,2)"> ORGANIZAÇÃO<br>
@@ -324,7 +150,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-12">
-                        <h2>Questão 12</h2>
+                        <h2>Etapa-3</h2>
                         <h3>4 - QUAL DESSES FATORES VOCÊ ACREDITA QUE INFLUENCIAM NO RELACIONAMENTO INTERPESSOAL?</h3>
                         <input id="question-12-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(12,1)"> AMIZADE<br>
                         <input id="question-12-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(12,2)"> COOPERAÇÃO<br>
@@ -334,7 +160,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-13">
-                        <h2>Questão 13</h2>
+                        <h2>Etapa-4</h2>
                         <h3>1 - QUAL DESSAS VOCÊ ACREDITA SER SUA MAIOR HABILIDADE COMPORTAMENTAL?</h3>
                         <input id="question-13-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(13,1)"> AUTOCONHECIMENTO<br>
                         <input id="question-13-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(13,2)"> INICIATIVA<br>
@@ -344,7 +170,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-14">
-                        <h2>Questão 14</h2>
+                        <h2>Etapa-4</h2>
                         <h3>2 - QUAL DESSAS VOCÊ ACREDITA SER SUA MAIOR HABILIDADE PROFISSIONAL?</h3>
                         <input id="question-14-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(14,1)"> ÉTICA <br>
                         <input id="question-14-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(14,1)">  VISÃO ESTRATÉGICA<br>
@@ -354,7 +180,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-15">
-                        <h2>Questão 15</h2>
+                        <h2>Etapa-4</h2>
                         <h3>3 - QUAL DESSAS HABILIDADES VOCÊ ACREDITA QUE PRECISA DESENVOLVER OU MELHORAR? </h3>
                         <input id="question-15-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(15,1)"> COMUNICAÇÃO<br>
                         <input id="question-15-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(15,1)"> TOMADA DE DECISÃO<br>
@@ -364,7 +190,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-16">
-                        <h2>Questão 16</h2>
+                        <h2>Etapa-4</h2>
                         <h3>4 - QUAL DESSAS VOCÊ ACREDITA SER SUA MAIOR HABILIDADE TÉCNICA?</h3>
                         <input id="question-16-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(16,1)"> TRIBUTOS<br>
                         <input id="question-16-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(16,1)"> INCENTIVO A AUDITORIAS<br>
@@ -374,7 +200,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-17">
-                        <h2>Questão 17</h2>
+                        <h2>Etapa-5</h2>
                         <h3>1 - O QUE VOCÊ ACREDITA NECESSÁRIO PARA SER UM PROFISSIONAL RESPONSÁVEL?</h3>
                         <input id="question-17-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(17,1)"> SIGILO<br>
                         <input id="question-17-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(17,2)"> LIDERANÇA<br>
@@ -384,7 +210,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-18">
-                        <h2>Questão 18</h2>
+                        <h2>Etapa-5</h2>
                         <h3>2 -  POR MEIO DO QUE VOCÊ ACREDITA QUE A RESPONSABILIDADE PODE SER MELHORADA?</h3>
                         <input id="question-18-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(18,1)"> CONTROLE DAS EMOÇÕES<br>
                         <input id="question-18-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(18,2)"> RECONHECER AS CONSEQUÊNCIAS DAS AÇÕES<br>
@@ -394,7 +220,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-19">
-                        <h2>Questão 19</h2>
+                        <h2>Etapa-5</h2>
                         <h3>3 - O QUE TE MOTIVA A DAR O SEU MELHOR NO TRABALHO?</h3>
                         <input id="question-19-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(19,1)"> METAS E OBJETIVOS<br>
                         <input id="question-19-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(19,2)"> SALÁRIO<br>
@@ -404,7 +230,7 @@ h3 {
                         <div class="clearfix"></div>
                     </div>
                     <div id="question-20">
-                        <h2>Questão 20</h2>
+                        <h2>Etapa-5</h2>
                         <h3>4 - QUAL DESSES FATORES VOCÊ ACREDITA SER O QUE MAIS CAUSA A FALTA DE COMPROMETIMENTO NO TRABALHO?</h3>
                         <input id="question-20-answer-a" type="radio" name="favelang" value=1 onclick="capturarRespostas(20,1)"> PRESSÃO EXCESSIVA<br>
                         <input id="question-20-answer-b" type="radio" name="favelang" value=2 onclick="capturarRespostas(20,2)"> CANSAÇO<br>
@@ -430,7 +256,7 @@ h3 {
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 
 </html>
