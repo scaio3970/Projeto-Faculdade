@@ -4,7 +4,7 @@ import { CreateEmployeeService } from '../services/CreateEmployeeService'
 export class CreateEmployeController{
     async handle(request:Request, response:Response){
         const {nome, email,id_cargo} = request.body
-
+        console.log(request.body)
         const service = new CreateEmployeeService()
 
         const result = await service.execute({nome,email,id_cargo})

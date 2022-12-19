@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="/stylealtdados.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/registrarFunc.js"></script>
+    <script src="/registrarUser.js"></script>
 
     <title>Cadastrar funcionario</title>
 
@@ -20,26 +20,29 @@
 
 <body>
     <div id="form">
-        <form action="">
             <h2 class="title">Alteração de Dados</h2>
 
 
-            <select id="Cargos" name="Cargos" onclick="cargoOpt()">
+            <select id="Funcionario" name="Cargos" onclick="cargoOpt()">
                 </select>
 
             <label for="username"></label>
 
             <div class="input">
-                <input id="nome" name="nome" placeholder="Nome" type="text">
+                <input id="Usuario" name="nome" placeholder="Usuario" type="text">
             </div>
 
-            <label for="email"></label>
-
-            <div class="input">
-                <input type="email" name="email" placeholder="E-Mail" type="text">
-            </div>
             <label for="senha"></label>
 
+            <div class="input">
+                <input type="password" name="password" placeholder="Senha" id="senha">
+            </div>
+
+            <label for="confirmar senha"></label>
+            <div class="input">
+                <input type="password" name="password" placeholder="Senha" id="confirmarSenha">
+            </div>
+            
 
             <div class="btn">
                 <button type="submit" onclick="salvar()">Salvar</button>

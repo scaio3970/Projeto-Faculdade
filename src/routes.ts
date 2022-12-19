@@ -11,6 +11,8 @@ import { GetAllRoleController } from "./controllers/GetAllRoleController";
 import { CreateEmployeController } from "./controllers/CreateEmployeController";
 import { CheckUserCargo } from "./services/CheckUserCargo";
 import { CheckUserExists } from "./services/CheckUserExist";
+
+import { GetAllEmployeeController } from "./controllers/GetAllEmployeeController";
 const routes = Router()
 
 const path = require('path')
@@ -21,6 +23,7 @@ const check = new CheckUserExists()
 //GET
 routes.get("/Usuarios",new GetAllUsersController().handle);
 routes.get("/cargos", new GetAllRoleController().handle)
+routes.get("/funcionarios", new GetAllEmployeeController().handle)
 
 //POST
 routes.post("/cadastro",new CreateUserController().handle);
@@ -51,13 +54,13 @@ routes.get("/cadastro/funcionario",(req,res) =>{
     res.render("front-end/RegistrarFuncionario")
 })
 
+routes.get("/cadastro/usuario",(req,res) =>{
+    res.render("front-end/RegistrarUsuario")
+})
+
 routes.get("/redirecionar", async (req, res) =>{
     const teste = new CheckUserCargo()
     const n = new JwtVerifyService()
-
-    if(check.execute(req.cookies.token)instanceof Error ){
-        res.redirect("/login")
-    }
 
     const id = await n.decoder(req.cookies.token)
     // console.log(id)

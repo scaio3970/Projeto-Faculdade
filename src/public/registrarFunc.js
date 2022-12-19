@@ -1,5 +1,5 @@
 url = "/cargos"
-
+postUrl = "/funcionario"
 async function cargoOpt(){
     
     let api = await axios.get(url)
@@ -20,9 +20,20 @@ async function cargoOpt(){
 
 async function salvar(){
     let id_cargo = document.getElementById("Cargos").value
-    let nome = document.getElementById("nome")
-    let email = document.getElementById("email")
+    let nome = document.getElementById("nome").value
+    let email = document.getElementById("email").value
     console.log(id_cargo)
+    console.log(nome)
+    console.log(email)
 
+    await axios.post(postUrl, {
+        nome:nome,
+        email:email,
+        id_cargo:id_cargo
+    })
+    .then(response =>{
+        window.location.href ="/cadastro/usuario"
+    })
+    .catch(error =>console.log(error.response.data))
 
 }

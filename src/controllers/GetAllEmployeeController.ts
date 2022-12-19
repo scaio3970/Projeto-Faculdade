@@ -1,10 +1,10 @@
 import { Request,Response } from "express";
+import { GetAllEmployeeService } from "../services/GetAllEmployeeService";
 
-import { GetAllRoleService } from "../services/GetAllRoleService";
 
-export class GetAllRoleController{
+export class GetAllEmployeeController{
     async handle(request:Request, response:Response) {
-        const service = new GetAllRoleService()
+        const service = new GetAllEmployeeService()
         const result = await service.execute()
 
         console.log(result)
